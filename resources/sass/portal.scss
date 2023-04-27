@@ -1,0 +1,187 @@
+// Variables
+@import 'variables';
+
+// Theme
+@import 'theme';
+
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.welcome_slider_wrap {
+    position: relative;
+    margin-bottom: 100px;
+
+    .navigation_wrap {
+        position: absolute;
+        width: 90%;
+        display: flex;
+        z-index: 5;
+        justify-content: space-between;
+        top: 50%; /* position the top  edge of the element at the middle of the parent */
+        left: 50%; /* position the left edge of the element at the middle of the parent */
+        transform: translate(-50%, -50%);
+        /* This is a shorthand of
+                                                translateX(-50%) and translateY(-50%) */
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            width: 54px;
+            height: 54px;
+            border: 2px $color-orange solid;
+            background: none;
+            transition: .2s all ease-in-out;
+
+            svg path {
+                stroke: $color-orange;
+            }
+
+            &:hover {
+                background: $color-orange;
+            }
+
+            &:hover svg path {
+                transition: .2s all ease-in-out;
+                stroke: $color-white;
+            }
+        }
+    }
+
+    .slide_wrap {
+        position: relative;
+        height: 780px;
+
+        .info_wrap {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .info {
+                max-width: 625px;
+
+                h1 {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 60px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $color-white;
+
+                }
+            }
+        }
+
+
+        &#slide_1 {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        &#slide_2 {
+            background: #FBF0E0;
+
+            h1 {
+                font-size: 40px;
+                color: $color-black;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 26px;
+                color: $color-black;
+            }
+        }
+
+        &#slide_3 {
+            background: #FBFBFB;
+
+            h1 {
+                font-size: 40px;
+                color: #37466D;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 26px;
+                color: #4A5571;
+            }
+        }
+    }
+}
+
+.title_label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-orange;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.why_us_wrap {
+
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    .advs_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+
+            .adv_wrap {
+
+                h2 {
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0.05em;
+                    color: #212121;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #525159;
+                    max-width: 322px;
+                }
+            }
+        }
+    }
+}
+
+.choose_cat_wrap {
+    .goods_cats_wrap {
+        display: flex;
+        gap: 30px;
+
+        .good_cats_wrap {
+            width: 380px;
+            height: 300px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
