@@ -7,7 +7,7 @@
             <a class="link" href="{{route('where2buy_page')}}">Где купить</a>
             <a class="link" href="{{route('instruction_page')}}">Инструкции</a>
             <a class="link" href="{{route('posts_page')}}">Лаборатория</a>
-            <svg class="close_menu" width="12" height="12" viewBox="0 0 12 12" fill="none"
+            <svg class="close_header_menu" width="12" height="12" viewBox="0 0 12 12" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 6L1 1M6 6L11 11M6 6L11 1M6 6L1 11" stroke="black" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round"/>
@@ -47,7 +47,7 @@
 
     @push('scripts')
         <script>
-            $('.mobile_menu_burger, .close_menu').on('click', function() {
+            $('.mobile_menu_burger, .close_header_menu').on('click', function() {
                 $('.menu_wrap').toggleClass('active');
             })
         </script>
