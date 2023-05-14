@@ -31,6 +31,10 @@
     padding-top: 34px;
     margin-bottom: 80px;
 
+    @media (max-width: $media-laptops-1024) {
+        margin-bottom: 40px;
+    }
+
     a {
         font-size: 14px;
         color: $color-black;
@@ -512,6 +516,11 @@
         gap: 20px;
         margin-bottom: 80px;
 
+        @media (max-width: $media-tablets-768) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .examples_wrap {
             width: 422px;
 
@@ -645,6 +654,10 @@
                 gap: 10px;
                 margin-bottom: 80px;
 
+                @media(max-width: $media-tablets-768) {
+                    justify-content: center;
+                }
+
                 .links_block_wrap {
                     position: relative;
 
@@ -666,6 +679,7 @@
                 .link-bg {
                     padding: 21px 30px;
                     font-size: 16px;
+                    margin: 0;
                 }
 
             }
@@ -675,6 +689,10 @@
                     display: flex;
                     gap: 50px;
                     margin-bottom: 30px;
+
+                    @media(max-width: $media-tablets-768) {
+                        justify-content: center;
+                    }
 
                     a {
                         color: $color-grey;
