@@ -30,6 +30,7 @@
     gap: 10px;
     padding-top: 34px;
     margin-bottom: 80px;
+    flex-wrap: wrap;
 
     @media (max-width: $media-laptops-1024) {
         margin-bottom: 40px;
@@ -513,7 +514,7 @@
     .welcome_wrap {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        gap: 60px;
         margin-bottom: 80px;
 
         @media (max-width: $media-tablets-768) {
@@ -569,7 +570,7 @@
 
 
                     img {
-                        width: fit-content;
+                        width: auto;
                         height: 400px;
                         margin: auto;
                     }

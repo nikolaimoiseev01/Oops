@@ -300,6 +300,7 @@ header {
         @media (max-width: $media-desktops-1200) {
             .mobile_menu_burger {
                 display: inherit;
+                cursor: pointer;
             }
         }
 
@@ -310,6 +311,7 @@ header {
 
             svg {
                 display: none;
+                cursor: pointer;
             }
 
             @media (max-width: $media-desktops-1200) {
