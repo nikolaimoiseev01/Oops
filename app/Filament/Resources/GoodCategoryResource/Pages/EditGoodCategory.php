@@ -9,6 +9,7 @@ use Filament\Resources\Pages\EditRecord;
 class EditGoodCategory extends EditRecord
 {
     protected static string $resource = GoodCategoryResource::class;
+    protected static ?string $title = 'Редактирование категории товара';
 
     protected function getActions(): array
     {

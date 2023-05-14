@@ -1,11 +1,11 @@
 <div class="welcome_slider_wrap">
     <div class="navigation_wrap">
-        <a id="prev">
+        <a class="prev_slider">
             <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.5 11L1.5 6L6.5 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
-        <a id="next">
+        <a class="next_slider">
             <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.5 11L6.5 6L1.5 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -75,8 +75,8 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
-            nextArrow: '#next',
-            prevArrow: '#prev'
+            nextArrow: '#next_slide_0',
+            prevArrow: '#prev_slide_0'
         });
     </script>
 @endpush

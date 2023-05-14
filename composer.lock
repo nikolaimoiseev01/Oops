@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82e470116be8d7c33e9684c2f8934ef7",
+    "content-hash": "f2135426105484283a4b9824d7aa9e8d",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -74,6 +74,83 @@
                 "source": "https://github.com/akaunting/laravel-money/tree/4.0.1"
             },
             "time": "2023-03-16T14:39:27+00:00"
+        },
+        {
+            "name": "awcodes/filament-table-repeater",
+            "version": "v1.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/awcodes/filament-table-repeater.git",
+                "reference": "65117b3724b66a74f3499d6d3b102f7309358932"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/awcodes/filament-table-repeater/zipball/65117b3724b66a74f3499d6d3b102f7309358932",
+                "reference": "65117b3724b66a74f3499d6d3b102f7309358932",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.0",
+                "illuminate/contracts": "^9.0|^10.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.13.5"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^6.0|^7.0",
+                "orchestra/testbench": "^7.0|^8.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "pestphp/pest-plugin-livewire": "^1.0",
+                "pestphp/pest-plugin-parallel": "^0.3",
+                "phpunit/phpunit": "^9.5|^10.0",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Awcodes\\FilamentTableRepeater\\FilamentTableRepeaterServiceProvider"
+                    ],
+                    "aliases": {
+                        "FilamentTableRepeater": "Awcodes\\FilamentTableRepeater\\Facades\\FilamentTableRepeater"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Awcodes\\FilamentTableRepeater\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Weston",
+                    "email": "awcodes1@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A modified version of the Filament Forms Repeater to display it as a table.",
+            "homepage": "https://github.com/awcodes/filament-table-repeater",
+            "keywords": [
+                "awcodes",
+                "filament-table-repeater",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/awcodes/filament-table-repeater/issues",
+                "source": "https://github.com/awcodes/filament-table-repeater/tree/v1.2.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/awcodes",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-03-20T17:54:40+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -757,7 +834,7 @@
         },
         {
             "name": "filament/filament",
-            "version": "v2.17.29",
+            "version": "v2.17.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/app.git",
@@ -820,7 +897,7 @@
         },
         {
             "name": "filament/forms",
-            "version": "v2.17.29",
+            "version": "v2.17.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
@@ -878,7 +955,7 @@
         },
         {
             "name": "filament/notifications",
-            "version": "v2.17.29",
+            "version": "v2.17.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -931,7 +1008,7 @@
         },
         {
             "name": "filament/spatie-laravel-media-library-plugin",
-            "version": "v2.17.29",
+            "version": "v2.17.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-media-library-plugin.git",
@@ -968,7 +1045,7 @@
         },
         {
             "name": "filament/spatie-laravel-translatable-plugin",
-            "version": "v2.17.29",
+            "version": "v2.17.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-translatable-plugin.git",
@@ -1014,7 +1091,7 @@
         },
         {
             "name": "filament/support",
-            "version": "v2.17.29",
+            "version": "v2.17.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
@@ -1064,16 +1141,16 @@
         },
         {
             "name": "filament/tables",
-            "version": "v2.17.29",
+            "version": "v2.17.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
-                "reference": "89c11f54a196c334b36370cc8fedd722c26498ec"
+                "reference": "66daf83f779c7e1663e2aa86479d5d62a70909b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/tables/zipball/89c11f54a196c334b36370cc8fedd722c26498ec",
-                "reference": "89c11f54a196c334b36370cc8fedd722c26498ec",
+                "url": "https://api.github.com/repos/filamentphp/tables/zipball/66daf83f779c7e1663e2aa86479d5d62a70909b8",
+                "reference": "66daf83f779c7e1663e2aa86479d5d62a70909b8",
                 "shasum": ""
             },
             "require": {
@@ -1116,7 +1193,7 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2023-04-27T13:44:26+00:00"
+            "time": "2023-04-27T22:37:57+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -4583,16 +4660,16 @@
         },
         {
             "name": "spatie/temporary-directory",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/temporary-directory.git",
-                "reference": "e2818d871783d520b319c2d38dc37c10ecdcde20"
+                "reference": "0c804873f6b4042aa8836839dca683c7d0f71831"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/e2818d871783d520b319c2d38dc37c10ecdcde20",
-                "reference": "e2818d871783d520b319c2d38dc37c10ecdcde20",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/0c804873f6b4042aa8836839dca683c7d0f71831",
+                "reference": "0c804873f6b4042aa8836839dca683c7d0f71831",
                 "shasum": ""
             },
             "require": {
@@ -4628,7 +4705,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/temporary-directory/issues",
-                "source": "https://github.com/spatie/temporary-directory/tree/2.1.1"
+                "source": "https://github.com/spatie/temporary-directory/tree/2.1.2"
             },
             "funding": [
                 {
@@ -4640,7 +4717,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-23T07:15:15+00:00"
+            "time": "2023-04-28T07:47:42+00:00"
         },
         {
             "name": "symfony/console",

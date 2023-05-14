@@ -19,9 +19,9 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class GoodCategoryResource extends Resource
 {
     protected static ?string $model = GoodCategory::class;
-    protected static ?string $navigationLabel = 'Категории товаров';
+    protected static ?string $navigationLabel = 'Категории';
     protected static ?string $navigationGroup = 'Товары';
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-information-circle';
 
     public static function form(Form $form): Form
     {
@@ -33,6 +33,7 @@ class GoodCategoryResource extends Resource
                         ->label('Название')
                         ->maxLength(255),
                     SpatieMediaLibraryFileUpload::make('good_cat_pic')
+                        ->collection('good_cat_pics')
                         ->required()
                         ->label('Изображение (png|jpg)')
                         ->image()
@@ -51,7 +52,7 @@ class GoodCategoryResource extends Resource
                 Tables\Columns\TextColumn::make('updated_at')
                     ->label('Обновлен')
                     ->dateTime(),
-                SpatieMediaLibraryImageColumn::make('good_cat_pic'),
+                SpatieMediaLibraryImageColumn::make('good_cat_pic')->collection('good_cat_pics'),
             ])
             ->filters([
                 //
@@ -62,7 +63,7 @@ class GoodCategoryResource extends Resource
             ->reorderable('position')
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
-            ]);
+            ])->defaultSort('position', 'asc');
     }
 
     public static function getRelations(): array

@@ -5,9 +5,27 @@
     url('/fonts/RoundedElegance/RoundedElegance-Regular.woff2') format('woff2'),
     url('/fonts/RoundedElegance/RoundedElegance-Regular.woff') format('woff'),
     url('/fonts/RoundedElegance/RoundedElegance-Regular.ttf') format('truetype'),
-    url('/fonts/RoundedElegance/RoundedElegance-Regular.svg#RoundedElegance-Regular') format('svg');
+    url('/fonts/RoundedElegance/RoundedElegance-Regular.svg#rounded_eleganceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy/Gilroy-Regular.eot');
+    src: url('/fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+    url('/fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype'),
+    url('/fonts/Gilroy/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+
+
+
+
 

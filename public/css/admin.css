@@ -1,0 +1,13 @@
+.filepond--item {
+    width: 150px;
+    margin: 10px !important;
+    height: 150px !important;
+}
+
+.filepond--file-info {
+    display: none !important;
+}
+
+.filament-footer {
+    display: none !important;
+}

@@ -22,7 +22,7 @@ class ChooseCategory extends Component
      */
     public function render(): View|Closure|string
     {
-        $GoodCategories = GoodCategory::orderBy('position')->get();
+        $GoodCategories = GoodCategory::orderBy('position', 'asc')->get();
 
         return view('components.home-page.choose-category', [
             'GoodCategories' => $GoodCategories

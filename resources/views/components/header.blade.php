@@ -1,12 +1,15 @@
 <header>
-    <div class="content">
+    <div x-data="{ open: false }" class="content">
         <x-logo/>
-        <div class="menu_wrap">
-            <a class="link" href="">О бренде</a>
-            <a class="link" href="">Каталог</a>
-            <a class="link" href="">Где купить</a>
-            <a class="link" href="">Инструкции</a>
-            <a class="link" href="">Лаборатория</a>
+        <div :class="open ? 'active' : ''" class="menu_wrap">
+            <a class="link" href="{{route('about_page')}}">О бренде</a>
+            <a class="link" href="{{route('goods_page')}}">Каталог</a>
+            <a class="link" href="{{route('where2buy_page')}}">Где купить</a>
+            <a class="link" href="{{route('instruction_page')}}">Инструкции</a>
+            <a class="link" href="{{route('posts_page')}}">Лаборатория</a>
+            <svg x-on:click="open = ! open" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6L1 1M6 6L11 11M6 6L11 1M6 6L1 11" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
         <div class="socials_wrap">
             <div class="social">
@@ -25,7 +28,11 @@
                 </svg>
             </div>
         </div>
-
-        <a href="" class="link-bg white">Задать вопрос</a>
+        <a href="#consult_form" class="link-bg grey">Задать вопрос</a>
+        <svg  class="mobile_menu_burger" x-on:click="open = ! open" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 18H31.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.5 9H31.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.5 27H31.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
     </div>
 </header>
