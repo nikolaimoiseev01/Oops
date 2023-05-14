@@ -1,0 +1,12 @@
+{
+  "resources/js/app.js": {
+    "file": "assets/app-bf1329e2.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/sass/portal.scss": {
+    "file": "assets/portal-4e9d1870.css",
+    "isEntry": true,
+    "src": "resources/sass/portal.scss"
+  }
+}
