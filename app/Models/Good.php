@@ -26,6 +26,10 @@ class Good extends Model implements HasMedia
         return $this->belongsTo(GoodCategory::class);
     }
 
+    public function GoodReview() {
+        return $this->hasMany(GoodReview::class);
+    }
+
     protected $casts = [
         'properties' => 'array',
         'advantages' => 'array',

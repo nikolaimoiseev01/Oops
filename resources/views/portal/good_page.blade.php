@@ -4,8 +4,8 @@
 
 @section('content')
 
-    <div class="content good_page_wrap">
-        <div class="bread_wrap">
+    <div class="good_page_wrap">
+        <div class="content bread_wrap">
             <a href="{{route('home')}}">
                 Главная
             </a>
@@ -19,7 +19,8 @@
             <p>{{$good['title']}}</p>
         </div>
 
-        <div class="welcome_wrap">
+        <div class="content welcome_wrap">
+            <h2 class="mobile_title">{{$good['title']}}</h2>
             <div class="examples_wrap">
                 <div class="main_example_block_wrap">
                     <div class="navigation_wrap">
@@ -46,6 +47,33 @@
                             </div>
                         @endforeach
                     </div>
+
+
+                    @push('scripts')
+                        <script>
+                            $('.main_example_wrap img').on('click', function(e) {
+                                url = $(this).attr('src')
+
+                                $('#img_full').attr('src', url)
+                                $('#img_full_modal').fadeToggle(200);
+                                $('body').css('overflow-y', 'hidden')
+                                setTimeout(function () {
+                                    modal_on = 1
+                                }, 500)
+                            })
+
+                            $(document).on("click", function (event) {
+                                if (!$(event.target).closest(".modal_content").length) {
+                                    if (modal_on === 1) {
+                                        $('.modal').fadeOut(200);
+                                        $('body').css('overflow-y', 'auto')
+                                        modal_on = 0
+                                    }
+                                }
+                            });
+                        </script>
+                    @endpush
+
                 </div>
                 <div class="other_examples_wrap">
                     @foreach($good->getMedia('good_examples') as $key=>$good_example)
@@ -109,18 +137,21 @@
                         <div class="nav_block" id="compound">
                             <p class="desc">{{$good['compound']}}</p>
                         </div>
-                                                <div class="nav_block" id="instruction" style="display: none;">
-                                                    <p class="desc">{{$good['instruction']}}</p>
-                                                </div>
+                        <div class="nav_block" id="instruction" style="display: none;">
+                            <p class="desc">{{$good['instruction']}}</p>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
 
+        @livewire('good-reviews', ['good_id' => $good->id])
+
+        <livewire:consultation-form/>
     </div>
 
-    <livewire:consultation-form/>
+
 
     @push('scripts')
         <script>

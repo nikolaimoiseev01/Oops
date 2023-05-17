@@ -24,6 +24,12 @@
     <img src="/media/media_fixed/preloader.gif" alt="">
 </div>
 
+
+<x-modal id="img_full_modal">
+    <img id="img_full">
+</x-modal>
+
+
 {{--<x-ui.modal/>--}}
 <x-header/>
 <div class="content-wrapper">

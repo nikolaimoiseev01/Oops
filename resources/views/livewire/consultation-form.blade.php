@@ -9,7 +9,11 @@
                     </p>
                     <div class="input_wrap">
                         <label for="">Тема вопроса *</label>
-                        <input required name="topic" type="text">
+                        <select required name="topic" id="">
+                            <option value="Общий вопрос">Общий вопрос</option>
+                            <option value="О продукции">О продукции</option>
+                            <option value="Сотрудничество">Сотрудничество</option>
+                            </select>
                     </div>
                     <div class="input_wrap">
                         <label for="">Фио *</label>
