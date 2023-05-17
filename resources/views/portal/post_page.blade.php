@@ -1,6 +1,6 @@
 @extends('layouts.portal')
 
-@section('title')Статья@endsection
+@section('title'){{$post['title']}}@endsection
 
 @section('content')
     <div class="post_page_wrap">

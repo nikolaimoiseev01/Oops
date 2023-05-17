@@ -1,6 +1,6 @@
 @extends('layouts.portal')
 
-@section('title')Где купить@endsection
+@section('title')Каталог@endsection
 
 @section('content')
     <div class="goods_page_wrap">

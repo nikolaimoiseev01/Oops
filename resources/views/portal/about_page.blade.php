@@ -1,6 +1,6 @@
 @extends('layouts.portal')
 
-@section('title')Инструкции@endsection
+@section('title')О бренде@endsection
 
 @section('content')
     <div class="about_page_wrap">

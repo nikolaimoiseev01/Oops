@@ -1,6 +1,6 @@
 @extends('layouts.portal')
 
-@section('title')Главная@endsection
+@section('title'){{$good['title']}}@endsection
 
 @section('content')
 
