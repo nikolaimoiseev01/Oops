@@ -25,7 +25,9 @@ class ConsultationResource extends Resource
 {
     protected static ?string $model = Consultation::class;
     protected static ?string $navigationLabel = 'Консультации';
+    protected static ?string $navigationGroup = 'Консультации';
     protected static ?string $title = 'Консультации';
+
     protected static ?string $navigationIcon = 'heroicon-o-chat';
 
 

@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Consultation;
+use App\Models\ConsultTopic;
 use App\Models\Course;
 use Livewire\Component;
 
@@ -12,7 +13,10 @@ class ConsultationForm extends Component
 
     public function render()
     {
-        return view('livewire.consultation-form');
+        $consult_topics = ConsultTopic::orderBy('title')->get();
+        return view('livewire.consultation-form', [
+            'consult_topics' => $consult_topics
+        ]);
     }
 
     public function MakeConsult($formdata)

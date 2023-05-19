@@ -46,15 +46,15 @@
         </div>
         <div class="column">
             <h2>Где купить</h2>
-            <a>Интернет-магазины</a>
-            <a>Зоомагазины</a>
-            <a href="">Дилеры/опт</a>
+            <a href="{{route('where2buy_page')}}">Интернет-магазины</a>
+            <a href="{{route('where2buy_page')}}">Зоомагазины</a>
+            <a>Дилеры/опт</a>
         </div>
     </div>
 
     <div class="content bottom_block">
         <div class="docs_wrap">
-        <a href="">Пользовательское соглашение</a>
+        <a target="_blank" href="/media/media_fixed/user_agreement.pdf">Пользовательское соглашение</a>
         <a href="">Конфиденциальность</a>
         <a href="">Владелец сайта</a>
         </div>

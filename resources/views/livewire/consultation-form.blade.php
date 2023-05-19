@@ -10,10 +10,10 @@
                     <div class="input_wrap">
                         <label for="">Тема вопроса *</label>
                         <select required name="topic" id="">
-                            <option value="Общий вопрос">Общий вопрос</option>
-                            <option value="О продукции">О продукции</option>
-                            <option value="Сотрудничество">Сотрудничество</option>
-                            </select>
+                            @foreach($consult_topics as $consult_topic)
+                                <option value="{{$consult_topic['title']}}">{{$consult_topic['title']}}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="input_wrap">
                         <label for="">Фио *</label>
@@ -35,11 +35,15 @@
 
                     <div class="checkbox_wrap">
                         <input required id="agreement" type="checkbox">
-                        <label for="agreement">Я согласен с условиями пользовательского соглашения</label>
+                        <label for="agreement">Я согласен с условиями <a target="_blank"
+                                                                         href="/media/media_fixed/user_agreement.pdf">пользовательского
+                                соглашения</a></label>
                     </div>
                     <div class="checkbox_wrap">
                         <input required id="person_data" type="checkbox">
-                        <label for="person_data">Я даю свое согласие на обработку персональных данных</label>
+                        <label for="person_data">Я даю свое согласие на <a target="_blank"
+                                                                           href="/media/media_fixed/user_data.pdf">обработку
+                                персональных данных</a></label>
                     </div>
 
                     <button type="submit" class="show_preloader link-bg orange">Отправить</button>

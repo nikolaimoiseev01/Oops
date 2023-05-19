@@ -516,6 +516,10 @@ footer {
         display: flex;
         align-items: center;
         gap: 10px;
+
+        a {
+            color: $color-orange;
+        }
     }
     input[type='checkbox'],
     input[type='radio'] {

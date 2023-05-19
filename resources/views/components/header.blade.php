@@ -14,7 +14,7 @@
             </svg>
         </div>
         <div class="socials_wrap">
-            <a target="_blank" href="https://instagram.com/oopspet.ru?igshid=MzRlODBiNWFlZA==" class="social">
+            <a target="_blank" href="https://t.me/+I_FV-V9nSD1lMDJi" class="social">
                 <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M16.5212 0.63817C16.7372 0.547819 16.9735 0.516661 17.2056 0.547932C17.4378 0.579203 17.6573 0.67175 17.8412 0.815963C18.0252 0.960176 18.1668 1.15078 18.2516 1.3679C18.3363 1.58505 18.361 1.82079 18.3228 2.0506L16.3412 14.0008C16.149 15.1534 14.8769 15.8144 13.8136 15.2403C12.9241 14.7599 11.603 14.0198 10.4148 13.2475C9.82056 12.861 8.00062 11.6233 8.22427 10.7423C8.41656 9.9892 11.4746 7.15913 13.222 5.47653C13.9079 4.81549 13.5952 4.43416 12.7851 5.04228C10.773 6.55202 7.54454 8.84786 6.47683 9.49411C5.53493 10.064 5.04385 10.1613 4.45674 10.064C3.38554 9.88672 2.39211 9.61227 1.58128 9.27786C0.485625 8.82616 0.538923 7.32859 1.58041 6.89245L16.5212 0.63817Z"
@@ -37,7 +37,7 @@
                 </svg>
             </a>
         </div>
-        <a href="#consult_form" class="link-bg grey">Задать вопрос</a>
+        <a href="{{route('home')}}#consult_form" class="link-bg grey">Задать вопрос</a>
         <svg class="mobile_menu_burger" x-on:click="open = ! open" width="36" height="36" viewBox="0 0 36 36"
              fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.5 18H31.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
