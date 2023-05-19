@@ -4,7 +4,7 @@
         <h2 class="title_block">{{$title}}</h2>
         <div class="preview_cards_wrap">
             @foreach($posts as $post)
-                <div style="background-image: url('{{$post->getFirstMediaUrl('post_cover')}}')" class="preview_card">
+                <div onclick="window.open('{{route('post_page', $post['id'])}}','mywindow');" style="background-image: url('{{$post->getFirstMediaUrl('post_cover')}}')" class="preview_card">
                     <h3 class="title">{{$post['title']}}</h3>
                     <a href="{{route('post_page', $post['id'])}}" class="link-bg black">
                         Читать

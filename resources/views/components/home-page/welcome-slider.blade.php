@@ -51,11 +51,12 @@
             </div>
 
         </div>
-        <div id="slide_1" style="background-image: url('/media/media_fixed/welcome_slide_1.png')" class="slide_wrap">
-            {{--        <img src="/media/media_fixed/welcome_slide_1.png" alt="">--}}
+        <div id="slide_1" class="slide_wrap">
+
             <div class="content info_wrap">
                 <div class="info">
                     <h1>Концентрат OOPS!</h1>
+
                     <p>Еще Аристотель в своей «Политике» говорил, что музыка, воздействуя на человека, доставляет
                         «своего рода очищение, то есть облегчение</p>
                     <a href="{{route('goods_page')}}" class="link-bg orange">
@@ -66,8 +67,9 @@
                         </svg>
                     </a>
                 </div>
+                <img src="/media/media_fixed/welcome_slide_1.png" alt="">
             </div>
-
+            <img class="mobile_img"  src="/media/media_fixed/welcome_slide_1.png" alt="">
         </div>
     </div>
 </div>

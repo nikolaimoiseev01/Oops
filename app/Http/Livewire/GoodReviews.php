@@ -9,7 +9,7 @@ class GoodReviews extends Component
 {
 
     public $good_reviews;
-    public $reviews_cnt = 1;
+    public $reviews_cnt = 5;
     public $good_reviews_orig;
     public $load_more_check;
 
@@ -37,7 +37,7 @@ class GoodReviews extends Component
     }
 
     public function load_more() {
-        $this->reviews_cnt += 1;
+        $this->reviews_cnt += 5;
         $this->good_reviews = $this->good_reviews_orig->take($this->reviews_cnt);
     }
 }

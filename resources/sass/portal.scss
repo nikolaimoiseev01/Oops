@@ -82,6 +82,7 @@
 }
 
 .welcome_slider_wrap {
+    position: relative;
 
     .navigation_wrap {
         position: absolute;
@@ -144,10 +145,19 @@
             height: auto;
         }
 
+        .mobile_img {
+            display: none;
+            margin: 30px auto;
+            @media(max-width: $media-tablets-768) {
+                display: inherit;
+            }
+        }
+
         .info_wrap {
             display: flex;
             height: 100%;
-            max-width: 1400px;
+            width: 80%;
+            max-width: 1200px;
             align-items: center;
             justify-content: space-between;
 
@@ -171,13 +181,7 @@
                     margin-bottom: 40px;
                 }
 
-                .mobile_img {
-                    display: none;
-                    margin: 30px auto;
-                    @media(max-width: $media-tablets-768) {
-                        display: inherit;
-                    }
-                }
+
 
                 h1 {
                     margin-bottom: 20px;
@@ -209,7 +213,7 @@
 
         img {
             max-height: 80%;
-            @media(max-width: $media-laptops-1024) {
+            @media(max-width: $media-tablets-768) {
                 display: none;
             }
 
@@ -217,8 +221,22 @@
 
 
         &#slide_1 {
-            background-repeat: no-repeat;
-            background-size: cover;
+            background: #BBD8C5;
+
+            img {
+                max-height: 100%;
+                position: absolute;
+                right: 0;
+            }
+
+            .mobile_img {
+                position: inherit;
+                margin: 0 auto;
+                width: 100vw;
+                text-align: center;
+                max-height: 500px;
+                object-fit: contain;
+            }
         }
 
         &#slide_2 {
@@ -297,6 +315,7 @@
 
             @media(max-width: $media-tablets-768) {
                 order: 2;
+                gap: 40px;
             }
 
             .adv_wrap {
@@ -339,14 +358,17 @@
         display: flex;
         flex-direction: column;
         border-radius: 15px;
+        background-size: contain;
 
         @media (max-width: $media-tablets-768) {
             height: auto;
             padding: 10px;
+            background-size: 99999px;
         }
 
         .title {
             margin-bottom: 10px;
+            margin-top: 0;
             font-weight: 400;
             font-size: 24px;
             color: $color-white;
@@ -377,6 +399,7 @@
                 padding: 0;
                 background: none;
                 color: white;
+                display: none;
 
                 svg {
                     display: none;
@@ -396,7 +419,26 @@
     .title_block {
         margin-bottom: 40px;
     }
+
+    .mobile_choose_cat {
+        display: none;
+
+        @media(max-width: $media-tablets-768) {
+            display: inherit;
+            width: 100%;
+            text-align: center;
+        }
+    }
 }
+
+.choose_cat_wrap {
+    .preview_cards_wrap {
+        @media(max-width: $media-tablets-768) {
+            display: none;
+        }
+    }
+}
+
 
 .where2buy_wrap {
     @include block_margin_desk;
@@ -518,6 +560,7 @@
             margin: auto;
             flex-direction: column;
             padding-bottom: 100px;
+            text-align: justify;
 
             h2 {
                 text-align: center;
@@ -600,6 +643,10 @@
         justify-content: space-between;
         gap: 60px;
         margin-bottom: 80px;
+
+        @media (max-width: $media-tablets-768) {
+            gap: 0;
+        }
 
         .mobile_title {
             display: none;
@@ -718,6 +765,10 @@
 
             @media (max-width: $media-tablets-768) {
                 align-items: center;
+            }
+
+            ul {
+                display: none;
             }
 
 
@@ -884,8 +935,8 @@
             margin-top: 60px;
             display: flex;
             flex-direction: column;
-            gap: 40px;
-            padding-bottom: 86px;
+            gap: 20px;
+            padding-bottom: 156px;
             max-width: 90%;
 
 
@@ -897,10 +948,19 @@
 
                 p {
                     font-size: 15px;
+                    color: $color-black !important;
+
+                    span {
+                        color: $color-black !important;
+                    }
                 }
 
                 &:last-of-type {
-                    margin-bottom: 45px;
+                    margin-bottom: 20px;
+                }
+
+                img {
+                    display: none;
                 }
             }
 

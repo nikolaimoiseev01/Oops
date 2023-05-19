@@ -18,5 +18,6 @@
                 </div>
             @endforeach
         </div>
+        <a href="{{route('goods_page')}}" class="link-bg orange mobile_choose_cat">Подобрать</a>
     </div>
 </div>

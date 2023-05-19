@@ -85,12 +85,6 @@
             </div>
             <div class="info_wrap">
                 <h2>{{$good['title']}}</h2>
-                <div class="capacity_wrap">
-                    <p>Объем: </p>
-                    <a href="" class="link-bg orange">
-                        {{$good['capacity']}} {{$good['capacity_type']}}
-                    </a>
-                </div>
                 @if(count($good['advantages']) > 0)
                     <ul class="advantages_wrap">
                         @foreach($good['advantages'] as $advantage)
@@ -132,14 +126,23 @@
                     <div class="header_links_wrap">
                         <a data-id="compound" class="cont_nav_item current active link coal">Состав</a>
                         <a data-id="instruction" class="cont_nav_item link coal">Инструкция по применению</a>
+                        <a data-id="capacity" class="cont_nav_item link coal">Объем</a>
                     </div>
                     <div style="transition: .3s ease-in-out" class="list-wrap">
                         <div class="nav_block" id="compound">
-                            <p class="desc">{{$good['compound']}}</p>
+                            {!!  $good['compound'] !!}
                         </div>
                         <div class="nav_block" id="instruction" style="display: none;">
                             <p class="desc">{{$good['instruction']}}</p>
                         </div>
+                        <div class="nav_block" id="capacity" style="display: none;">
+                            <div class="capacity_wrap">
+                                <a href="" class="link-bg orange">
+                                    {{$good['capacity']}}
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>

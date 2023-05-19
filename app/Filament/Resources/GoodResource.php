@@ -16,6 +16,7 @@ use Filament\Forms\Components\Card;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Repeater;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TagsInput;
@@ -93,30 +94,32 @@ class GoodResource extends Resource
                         ->createItemButtonLabel('Добавить свойство')
                         ->label('Свойства')
                         ->columnSpan('full'),
-                    TagsInput::make('advantages')
-                        ->label('Преимущества'),
-                    Forms\Components\Textarea::make('desc')
+//                    TagsInput::make('advantages')
+//                        ->label('Преимущества'),
+                    RichEditor::make('desc')
                         ->required()
-                        ->label('Описание')
-                        ->maxLength(65535),
-                    Forms\Components\Textarea::make('compound')
+                        ->disableToolbarButtons([
+                            'attachFiles',
+                            'codeBlock',
+                        ])
+                        ->label('Описание'),
+                    RichEditor::make('compound')
                         ->required()
-                        ->label('Состав')
-                        ->maxLength(255),
-                    Forms\Components\Textarea::make('instruction')
+                        ->disableToolbarButtons([
+                            'attachFiles',
+                            'codeBlock',
+                        ])
+                        ->label('Состав'),
+                    RichEditor::make('instruction')
                         ->required()
-                        ->label('Инструкция')
-                        ->maxLength(255),
-                    Grid::make()
-                        ->schema([
-                            Forms\Components\TextInput::make('capacity')
-                                ->label('Объем')
-                                ->required(),
-                            Forms\Components\TextInput::make('capacity_type')
-                                ->required()
-                                ->label('Тип объема')
-                                ->maxLength(255),
-                        ]),
+                        ->disableToolbarButtons([
+                            'attachFiles',
+                            'codeBlock',
+                        ])
+                        ->label('Инструкция'),
+                    Forms\Components\TextInput::make('capacity')
+                        ->label('Форма выпуска')
+                        ->required(),
 
                     KeyValue::make('links')
                         ->label('Ссылки')

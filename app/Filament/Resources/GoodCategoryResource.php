@@ -59,6 +59,7 @@ class GoodCategoryResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->reorderable('position')
             ->bulkActions([

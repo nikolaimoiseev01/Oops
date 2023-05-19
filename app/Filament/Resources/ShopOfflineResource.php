@@ -32,7 +32,7 @@ class ShopOfflineResource extends Resource
                         ->required()
                         ->maxLength(255),
                     Forms\Components\TextInput::make('address')
-                        ->label('Адрес')
+                        ->label('Адрес (с городом)')
                         ->required()
                         ->maxLength(255),
                     Forms\Components\TextInput::make('hours')
