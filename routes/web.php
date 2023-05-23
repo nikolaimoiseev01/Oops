@@ -25,6 +25,25 @@ Route::get('/about', function () {
     return view('portal.about_page');
 })->name('about_page');
 
+Route::get('/contacts', function () {
+    return view('portal.contacts_page');
+})->name('contacts_page');
+
+Route::get('/tech', function () {
+    return view('portal.tech_page');
+})->name('tech_page');
+
+Route::get('/docs', function () {
+    return view('portal.docs_page');
+})->name('docs_page');
+
+
+Route::get('/coop', function () {
+    return view('portal.coop_page');
+})->name('coop_page');
+
+
+
 Route::get('/posts', function () {
     return view('portal.posts_page');
 })->name('posts_page');

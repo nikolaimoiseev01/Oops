@@ -182,7 +182,6 @@
                 }
 
 
-
                 h1 {
                     margin-bottom: 20px;
 
@@ -1445,6 +1444,42 @@
             font-size: 14px;
             color: $color-grey;
         }
+    }
+}
+
+.contacts_page_wrap {
+    .bread_wrap {
+        margin-bottom: 40px;
+    }
+
+    .page_cover_wrap {
+        .info {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+
+            .blocks_wrap {
+                display: flex;
+                gap: 30px;
+                flex-wrap: wrap;
+
+                @media(max-width: $media-tablets-768) {
+                    justify-content: center;
+                }
+
+                .block {
+                    display: flex;
+                    max-width: 340px;
+                    gap: 10px;
+
+                    svg {
+                        width: 50px;
+                    }
+                }
+            }
+
+        }
+
     }
 }
 

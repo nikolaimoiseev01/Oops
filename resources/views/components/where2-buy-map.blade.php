@@ -1,4 +1,4 @@
-<div class="where2buy_block_wrap">
+<div id="where2buy_offline_map" class="where2buy_block_wrap">
     <div class="content">
 
 

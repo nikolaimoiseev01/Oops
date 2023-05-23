@@ -27,37 +27,40 @@
                     </svg>
                 </a>
             </div>
-            <a href="" class="link-bg orange">Связаться с нами</a>
+            <a href="{{route('home')}}#consult_form" class="link-bg orange">Связаться с нами</a>
         </div>
 
         <div class="column">
             <h2>О компании</h2>
-            <a>Запахи и пятна от животных</a>
-            <a>Уборка и дезинфекция дома</a>
-            <a href="">Коррекция поведения</a>
-            <a href="">Документы</a>
-        </div>
-        <div class="column">
-            <h2>О компании</h2>
+
             <a href="{{route('about_page')}}">О бренде</a>
-            <a>Технологии</a>
-            <a href="">Контакты</a>
-            <a href="">Стать партнёром</a>
+            <a href="{{route('tech_page')}}">Технологии</a>
+            <a href="{{route('contacts_page')}}">Контакты</a>
+            <a href="{{route('coop_page')}}">Стать партнёром</a>
         </div>
+
+        <div class="column">
+            <h2>Продукция</h2>
+            @foreach($good_cats as $good_cat)
+                <a href="{{route('goods_page')}}?good_category_chosen[0]={{$good_cat['id']}}">{{$good_cat['title']}}</a>
+            @endforeach
+            <a href="{{route('docs_page')}}">Документы</a>
+        </div>
+
         <div class="column">
             <h2>Где купить</h2>
             <a href="{{route('where2buy_page')}}">Интернет-магазины</a>
-            <a href="{{route('where2buy_page')}}">Зоомагазины</a>
+            <a href="{{route('where2buy_page')}}#where2buy_offline_map">Зоомагазины</a>
             <a>Дилеры/опт</a>
         </div>
     </div>
 
     <div class="content bottom_block">
         <div class="docs_wrap">
-        <a target="_blank" href="/media/media_fixed/user_agreement.pdf">Пользовательское соглашение</a>
-        <a href="">Конфиденциальность</a>
-        <a href="">Владелец сайта</a>
+            <a target="_blank" href="/media/media_fixed/user_agreement.pdf">Пользовательское соглашение</a>
+            <a target="_blank" href="/media/media_fixed/user_data.pdf">Конфиденциальность</a>
+            <a>Владелец сайта: ООО «Минт»</a>
         </div>
-        <p>ООО «Минт»,  © 2022. All rights reserved</p>
+        <p>ООО «Минт», © 2022. All rights reserved</p>
     </div>
 </footer>
