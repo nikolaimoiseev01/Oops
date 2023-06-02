@@ -9,6 +9,7 @@ use Filament\Resources\Pages\ManageRecords;
 class ManageConsultTopics extends ManageRecords
 {
     protected static string $resource = ConsultTopicResource::class;
+    protected static ?string $title = 'Темы консультаций';
 
     protected function getActions(): array
     {

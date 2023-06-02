@@ -9,6 +9,7 @@ use Filament\Resources\Pages\ManageRecords;
 class ManageConsultStatuses extends ManageRecords
 {
     protected static string $resource = ConsultStatusResource::class;
+    protected static ?string $title = 'Статусы консультаций';
 
     protected function getActions(): array
     {
