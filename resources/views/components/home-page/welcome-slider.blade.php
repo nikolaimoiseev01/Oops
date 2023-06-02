@@ -11,6 +11,8 @@
             </svg>
         </a>
     </div>
+
+
     <div class="slider">
 
         <div id="slide_3" class="slide_wrap">
@@ -52,7 +54,8 @@
 
         </div>
         <div id="slide_1" class="slide_wrap">
-
+            <img src="/media/media_fixed/welcome_slide_1.png" alt="">
+            <img class="mobile_img"  src="/media/media_fixed/welcome_slide_1.png" alt="">
             <div class="content info_wrap">
                 <div class="info">
                     <h1>Концентрат OOPS!</h1>
@@ -67,9 +70,9 @@
                         </svg>
                     </a>
                 </div>
-                <img src="/media/media_fixed/welcome_slide_1.png" alt="">
+
             </div>
-            <img class="mobile_img"  src="/media/media_fixed/welcome_slide_1.png" alt="">
+
         </div>
     </div>
 </div>
