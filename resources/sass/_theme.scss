@@ -399,7 +399,7 @@ footer {
         @media(max-width: $media-tablets-768) {
             flex-direction: column;
             text-align: center;
-            align-items: center;
+            align-items: center !important;
             gap: 40px;
         }
 
@@ -407,6 +407,10 @@ footer {
             display: flex;
             flex-direction: column;
             gap: 15px;
+
+            @media(max-width: $media-tablets-768) {
+                align-items: center;
+            }
 
             h2 {
                 font-weight: 400;
